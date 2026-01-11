@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  java-app:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+  nginx-web:
+    build:
+      context: ..
+      dockerfile: nginx/Dockerfile
+    ports:
+      - "80:80"
+    restart: unless-stopped

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Web Text Editor</h1>
+        <div class="toolbar">
+            <button id="newBtn">New</button>
+            <button id="openBtn">Open</button>
+            <button id="saveBtn">Save</button>
+            <input type="file" id="fileInput" accept=".txt" style="display: none;">
+        </div>
+        <textarea id="editor" placeholder="Start typing here..."></textarea>
+        <div id="status"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
